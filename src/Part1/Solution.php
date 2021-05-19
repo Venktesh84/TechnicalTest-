@@ -11,7 +11,7 @@ class Solution
      *      See the `input` folder for examples
      */
     private string $instructions;
-    $instructions = trim(file_get_contents(__DIR__ . "/../../input/" . $inputFile));
+  
 
     public function __construct(string $instructions)
     {
@@ -23,6 +23,7 @@ class Solution
      */
     public function getAnswer(): int
     {
+        $instructions = trim(file_get_contents(__DIR__ . "/../../input/" . $inputFile));
         // TODO implement the solution
         $floor = 0;
         
