@@ -22,6 +22,17 @@ class Solution
      */
     public function getAnswer(): int
     {
+        $floor = 0;
+        
+        for ($i = 0; $i < strlen($instructions); $i++){
+            if($instructions[$i]=="("){
+                $floor++;
+            }else{
+                $floor--;
+            }
+        }
+
+        return $floor;
         // TODO implement the solution
     }
 }
