@@ -21,7 +21,7 @@ class Solution
     /**
      * @return int The floor number that the man will arrive at after starting at floor 0 and following all of the instructions
      */
-    public function getAnswer($instructions): int
+    public function getAnswer(): int
     {
         // TODO implement the solution
         $floor = 0;
