@@ -10,12 +10,12 @@ class Solution
      *      Closing parenthesis ')' indicates going DOWN a floor
      *      See the `input` folder for examples
      */
-    private string $instructions1;
+    private string $instructions;
   
 
     public function __construct(string $instructions)
     {
-        $this->instructions1 = $instructions;
+        $this->instructions = $instructions;
     }
 
     /**
