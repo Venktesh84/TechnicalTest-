@@ -23,7 +23,6 @@ class Solution
      */
     public function getAnswer(): int
     {
-        // TODO implement the solution
         $floor = 0;
         for ($i = 0; $i < strlen($this->instructions); $i++){
             if($this->instructions[$i]=="("){
@@ -32,7 +31,6 @@ class Solution
                 $floor--;
             }
         }
-
         return $floor;
     }
 }
