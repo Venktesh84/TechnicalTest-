@@ -17,7 +17,7 @@ class SolutionTest extends TestCase
 
         $solution = new Solution($instructions);
 
-        $this->assertEquals($expectedAnswer, $solution->getAnswer($instructions));
+        $this->assertEquals($expectedAnswer, $solution->getAnswer());
     }
 
     public function inputFiles(): array
