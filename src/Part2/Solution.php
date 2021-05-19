@@ -19,6 +19,9 @@ class Solution
     {
         return <<<SQL
             -- Put your SQL statement here
+        SELECT name, title FROM venky.artists inner join 
+        songs on artists.id = songs.artist_id
+        order by artists.name desc ;
         SQL;
     }
 
@@ -37,6 +40,12 @@ class Solution
     {
         return <<<SQL
             -- Put your SQL statement here
+        SELECT name,count( DISTINCT songs_genres.genre_id) as count FROM venky.artists left join 
+        songs on artists.id = songs.artist_id
+        inner join songs_genres on songs_genres.song_id = songs.id
+        group by artists.name 
+        having(count > 1)
+        order by artists.name desc ;
         SQL;
     }
 }
