@@ -10,22 +10,21 @@ class Solution
      *      Closing parenthesis ')' indicates going DOWN a floor
      *      See the `input` folder for examples
      */
-    private string $instructions;
+    private string $instructions1;
   
 
     public function __construct(string $instructions)
     {
-        $this->instructions = $instructions;
+        $this->instructions1 = $instructions;
     }
 
     /**
      * @return int The floor number that the man will arrive at after starting at floor 0 and following all of the instructions
      */
-    public function getAnswer(): int
+    public function getAnswer( string $instructions): int
     {
         // TODO implement the solution
         $floor = 0;
-        
         for ($i = 0; $i < strlen($instructions); $i++){
             if($instructions[$i]=="("){
                 $floor++;
