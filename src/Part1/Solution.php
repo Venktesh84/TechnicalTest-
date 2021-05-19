@@ -10,7 +10,7 @@ class Solution
      *      Closing parenthesis ')' indicates going DOWN a floor
      *      See the `input` folder for examples
      */
-    private string $instructions="";
+    private string $instructions;
   
 
     public function __construct(string $instructions)
