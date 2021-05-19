@@ -24,7 +24,6 @@ class Solution
         order by artists.name desc ;
         SQL;
     }
-
     /**
      * Return an SQL statement (SELECT ...) to retrieve
      * each artist that works in MULTIPLE genres along
